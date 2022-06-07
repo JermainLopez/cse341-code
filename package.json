@@ -1,0 +1,23 @@
+{
+    "name": "cse341-code",
+    "version": "1.0.0",
+    "description": "Code to give to student for the cse341 course",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JermainLopez/cse341-code.git"
+    },
+    "author": "Jermain Lopez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JermainLopez/cse341-code/issues"
+    },
+    "homepage": "https://github.com/JermainLopez/cse341-code#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "nodemon": "^2.0.16"
+    }
+}
