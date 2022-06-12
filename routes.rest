@@ -9,13 +9,4 @@ GET http://localhost:8080/contacts/62a52a73831f1f69fbd11edc
 GET http://localhost:8080/contacts/62a52a73831f1f69fbd11edd
 
 // Send request from Heroku
-### 
-GET https://cse341-jermainlopez.herokuapp.com/contacts 
-### 
-GET https://cse341-jermainlopez.herokuapp.com/contacts/62a52a73831f1f69fbd11edb
-### 
-GET https://cse341-jermainlopez.herokuapp.com/contacts/62a52a73831f1f69fbd11edc 
-### 
-GET https://cse341-jermainlopez.herokuapp.com/contacts/62a52a73831f1f69fbd11edd
-### 
-GET https://cse341-jermainlopez.herokuapp.com/contacts/62a52a73831f1f69fbd11edd
+
