@@ -10,6 +10,7 @@ const initDb = (callback) => {
         console.log('Db is already initialized!');
         return callback(null, _db);
     }
+    //Use our variable MONGODB_URI fron .env file
     MongoClient.connect(process.env.MONGODB_URI)
         .then((client) => {
             _db = client;
@@ -28,6 +29,7 @@ const getDb = () => {
     return _db;
 };
 
+//Exports both function to use in another file
 module.exports = {
     initDb,
     getDb,

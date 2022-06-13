@@ -24,4 +24,3 @@ const getSingle = async(req, res, next) => {
 };
 //Export the function por use in another file
 module.exports = { getAll, getSingle };
-
