@@ -22,5 +22,7 @@ const getSingle = async(req, res, next) => {
         res.status(200).json(lists[0]);
     });
 };
+
+
 //Export the function por use in another file
 module.exports = { getAll, getSingle };

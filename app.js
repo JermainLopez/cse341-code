@@ -8,6 +8,7 @@ app
     .use(bodyParser.json())
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
+        app.get('/', require('./routes/index2.js'));
         next();
     })
     .use('/', require('./routes'));
