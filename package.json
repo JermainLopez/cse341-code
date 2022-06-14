@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "Code to give to student for the cse341 course",
     "main": "app.js",
+    "engines": {
+        "node": ">=6.9.0"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node app.js",

@@ -20,27 +20,6 @@ const initDb = (callback) => {
             callback(err);
         });
 };
-/* 
-const { MongoClient } = require('mongodb')
-
-async function main() {
-  
-  const url = 'mongodb://localhost:27017'
-
-  const client = new MongoClient(url)
-
-  try {
-    await client.connect()
-  } catch (e) {
-    console.error(e)
-  } finally {
-    await client.close()
-  }
-}
- */
-
-
-
 
 //Send our client
 const getDb = () => {
