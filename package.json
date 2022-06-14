@@ -4,7 +4,8 @@
     "description": "Code to give to student for the cse341 course",
     "main": "app.js",
     "engines": {
-        "node": "16.15.1"
+        "node": "16.15.1",
+        "npm": "8.12.1"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
