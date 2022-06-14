@@ -17,7 +17,9 @@ mongodb.initDb((err, mongodb) => {
     if (err) {
         console.log(err);
     } else {
-        app.listen(port);
+        app.listen(port, function() {
+            console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+        });
         console.log(`Connected to DB and listening on ${port}`);
     }
 });
