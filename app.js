@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
@@ -14,7 +16,7 @@ app
     .use('/', require('./routes'));
 
 
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
     if (err) {
         console.log(err);
     } else {
