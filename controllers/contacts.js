@@ -31,9 +31,8 @@ const createNewContact = async(req, res) => {
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    console.log(newContact);
     const result = await mongodb.getDb().db().collection('contacts').insertOne(newContact);
-    if (result.result.n === 1) {
+    if (result.acknowledged) {
         res.status(201).json(result);
     } else {
         res.status(500).json(result.error || 'Somethin cause a problem with create contact');
@@ -53,9 +52,9 @@ const updateContactInDatabase = async(req, res) => {
         .getDb()
         .db()
         .collection('contacts')
-        .replaceOne({ _id: userId }, { $set: existingContact });
-    if (result.result.nModified === 1) {
-        res.status(204).json(result);
+        .updateOne({ _id: userId }, { $set: existingContact });
+    if (result.modifiedCount > 0) {
+        res.status(204).send();
     } else {
         res.status(500).json(result.error || 'Somethin cause a problem with update contact');
     }
@@ -69,8 +68,8 @@ const deleteContactFromDatabase = async(req, res) => {
             .db()
             .collection('contacts')
             .deleteOne({ _id: userId });
-        if (result.result.n === 1) {
-            res.status(204).json(result);
+        if (result.deletedCount > 0) {
+            res.status(204).send();
         } else {
             res.status(500).json(result.error || 'Somethin cause a problem with delete contact');
         }

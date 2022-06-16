@@ -15,24 +15,25 @@ Content-Type: application/json
 }
 
 ### PUT contact by Id
-PUT http://localhost:8080/contacts/62aa857e086347c641f9eefc HTTP/1.1
+PUT http://localhost:8080/contacts/62aaaa3a086347c641f9eeff HTTP/1.1
 Content-Type: application/json
 
 {
     "firstName": "Alexi",
     "lastName": "Lopez",
     "email": "alexislopez@outlook.com",
-    "favoriteColor": "Blue",
+    "favoriteColor": "Red",
     "birthday": "01/09/98"
 }
 ### DELETE contact by Id
-DELETE http://localhost:8080/contacts/62aa857e086347c641f9eefd
+DELETE http://localhost:8080/contacts/62a90cd1086347c641f9eefa
+
 ### 
-GET http://localhost:8080/contacts/62a90cd1086347c641f9eefa 
+GET http://localhost:8080/contacts/62aaaa3a086347c641f9eefe
 ### 
-GET http://localhost:8080/contacts/62aa857e086347c641f9eefb
+GET http://localhost:8080/contacts/62aaaa3a086347c641f9eeff
 ### 
-GET http://localhost:8080/contacts/62aa857e086347c641f9eefc
+GET http://localhost:8080/contacts/62aaaa3a086347c641f9ef00
 
 // Send request from Heroku
 ### 
@@ -49,22 +50,22 @@ Content-Type: application/json
     "birthday": "11/10/97"
 }
 ### PUT contact by Id
-PUT https://cse341-jermain-clients.herokuapp.com/contacts/62a90cd1086347c641f9eef8 HTTP/1.1
+PUT https://cse341-jermain-clients.herokuapp.com/contacts/62aaaa3a086347c641f9ef00 HTTP/1.1
 Content-Type: application/json
 
 {
-    "firstName": "Mario",
-    "lastName": "Morales",
-    "email": "mmorales@gmail.com",
-    "favoriteColor": "Red",
-    "birthday": "13/12/97"
+    "firstName": "Kenneth",
+    "lastName": "Flores",
+    "email": "kennethdaniel@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "10/11/99"
 }
 ### DELETE contact by Id
-DELETE https://cse341-jermain-clients.herokuapp.com/contacts/62aa857e086347c641f9eefb
+DELETE https://cse341-jermain-clients.herokuapp.com/contacts/62aa9e46c79935548330e922
 ### 
-GET https://cse341-jermain-clients.herokuapp.com/contacts/62a90cd1086347c641f9eefa
+GET https://cse341-jermain-clients.herokuapp.com/contacts/62aaaa3a086347c641f9eefe
 ### 
-GET https://cse341-jermain-clients.herokuapp.com/contacts/62aa857e086347c641f9eefb 
+GET https://cse341-jermain-clients.herokuapp.com/contacts/62aaaa3a086347c641f9eeff 
 ### 
-GET https://cse341-jermain-clients.herokuapp.com/contacts/62aa857e086347c641f9eefc
+GET https://cse341-jermain-clients.herokuapp.com/contacts/62aaaa3a086347c641f9ef00
 
