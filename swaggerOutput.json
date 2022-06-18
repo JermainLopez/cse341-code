@@ -1,14 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
     "title": "Contacts API",
-    "description": "Contacts API with Swagger by Jermain Lopez"
+    "description": "Contacts API with Swagger by Jermain Lopez",
+    "version": "1.0.0"
   },
   "host": "cse341-jermain-clients.herokuapp.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "httpS"
   ],
   "paths": {
     "/api-docs": {

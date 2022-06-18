@@ -3,16 +3,14 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
-        version: '1.0.0',
         title: 'Contacts API',
-        description: 'Contacts API with Swagger by Jermain Lopez',
+        description: 'Contacts API with Swagger by Jermain Lopez'
     },
     host: 'cse341-jermain-clients.herokuapp.com',
-    schemes: ['https'],
-
+    schemes: ['httpS']
 };
 
-const outputFile = './swagger-output.json';
+const outputFile = './swaggerOutput.json';
 const endpointsFiles = ['./routes/index.js'];
 
 /* NOTE: if you use the express Router, you must pass in the 
