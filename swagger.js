@@ -7,7 +7,7 @@ const doc = {
         description: 'Contacts API with Swagger by Jermain Lopez'
     },
     host: 'cse341-jermain-clients.herokuapp.com',
-    schemes: ['httpS']
+    schemes: ['https']
 };
 
 const outputFile = './swagger-output.json';

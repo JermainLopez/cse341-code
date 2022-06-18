@@ -8,7 +8,7 @@
   "host": "cse341-jermain-clients.herokuapp.com",
   "basePath": "/",
   "schemes": [
-    "httpS"
+    "https"
   ],
   "paths": {
     "/api-docs": {
