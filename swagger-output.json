@@ -8,12 +8,12 @@
   "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contacts/": {
       "get": {
-        "description": "",
+        "description": "Display all the contacts in the database",
         "produces": [
           "application/json"
         ],

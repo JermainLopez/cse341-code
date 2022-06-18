@@ -7,7 +7,7 @@ const doc = {
         description: 'Contacts API with Swagger by Jermain Lopez',
     },
     host: 'localhost:8080',
-    schemes: ['http'],
+    schemes: ['https'],
 };
 
 const outputFile = './swagger-output.json';

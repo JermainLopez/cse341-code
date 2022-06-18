@@ -3,6 +3,7 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 //Function get all the database from mongodb and acces the colection in db
 const getAll = async(req, res) => {
+    // #swagger.description = 'Display all the contacts in the database';
     const result = await mongodb.getDb().db().collection('contacts').find();
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
