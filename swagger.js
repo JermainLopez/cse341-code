@@ -7,7 +7,7 @@ const doc = {
         title: 'Contacts API',
         description: 'Contacts API with Swagger by Jermain Lopez',
     },
-    host: 'https://cse341-jermain-clients.herokuapp.com',
+    host: 'cse341-jermain-clients.herokuapp.com',
     schemes: ['https'],
 
 };
