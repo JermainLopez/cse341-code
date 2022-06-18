@@ -5,7 +5,7 @@
     "description": "Contacts API with Swagger by Jermain Lopez",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-jermain-clients.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "https"
