@@ -1,9 +1,9 @@
 {
   "swagger": "2.0",
   "info": {
+    "version": "1.0.0",
     "title": "Contacts API",
-    "description": "Contacts API with Swagger by Jermain Lopez",
-    "version": "1.0.0"
+    "description": "Contacts API with Swagger by Jermain Lopez"
   },
   "host": "https://cse341-jermain-clients.herokuapp.com/",
   "basePath": "/",
@@ -89,6 +89,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },

@@ -3,11 +3,13 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
+        version: '1.0.0',
         title: 'Contacts API',
         description: 'Contacts API with Swagger by Jermain Lopez',
     },
     host: 'https://cse341-jermain-clients.herokuapp.com/',
     schemes: ['http'],
+
 };
 
 const outputFile = './swagger-output.json';
