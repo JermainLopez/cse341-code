@@ -12,7 +12,6 @@ const getAll = async(req, res) => {
         });
     } catch (err) {
         res.status(500).json({ message: err.message });
-        console.log(err);
     }
 };
 //Get a single library fron db in mongodb
@@ -30,7 +29,6 @@ const getSingle = async(req, res) => {
         });
     } catch (err) {
         res.status(500).json({ message: err.message });
-        console.log(err);
     }
 };
 //Create a new contact in db in mongodb
@@ -51,7 +49,6 @@ const createNewContact = async(req, res) => {
         }
     } catch (err) {
         res.status(500).json({ message: err.message });
-        console.log(err);
     }
 };
 //Update a contact in db in mongodb
@@ -77,7 +74,6 @@ const updateContactInDatabase = async(req, res) => {
         }
     } catch (err) {
         res.status(500).json({ message: err.message });
-        console.log(err);
     }
 };
 
@@ -97,7 +93,6 @@ const deleteContactFromDatabase = async(req, res) => {
             }
         } catch (err) {
             res.status(500).json({ message: err.message });
-            console.log(err);
         }
     }
     //Export the function por use in another file
