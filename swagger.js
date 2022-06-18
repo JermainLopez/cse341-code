@@ -10,7 +10,7 @@ const doc = {
     schemes: ['httpS']
 };
 
-const outputFile = './swaggerOutput.json';
+const outputFile = './swagger-output.json';
 const endpointsFiles = ['./routes/index.js'];
 
 /* NOTE: if you use the express Router, you must pass in the 
